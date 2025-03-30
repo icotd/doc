@@ -398,3 +398,98 @@ async function main() {
 
 main();
 ```
+
+## Responses Types
+
+- <code>ComputerTool</code>
+- <code>EasyInputMessage</code>
+- <code>FileSearchTool</code>
+- <code>FunctionTool</code>
+- <code>Response</code>
+- <code>ResponseAudioDeltaEvent</code>
+- <code>ResponseAudioDoneEvent</code>
+- <code>ResponseAudioTranscriptDeltaEvent</code>
+- <code>ResponseAudioTranscriptDoneEvent</code>
+- <code>ResponseCodeInterpreterCallCodeDeltaEvent</code>
+- <code>ResponseCodeInterpreterCallCodeDoneEvent</code>
+- <code>ResponseCodeInterpreterCallCompletedEvent</code>
+- <code>ResponseCodeInterpreterCallInProgressEvent</code>
+- <code>ResponseCodeInterpreterCallInterpretingEvent</code>
+- <code>ResponseCodeInterpreterToolCall</code>
+- <code>ResponseCompletedEvent</code>
+- <code>ResponseComputerToolCall</code>
+- <code>ResponseComputerToolCallOutputItem</code>
+- <code>ResponseComputerToolCallOutputScreenshot</code>
+- <code>ResponseContent</code>
+- <code>ResponseContentPartAddedEvent</code>
+- <code>ResponseContentPartDoneEvent</code>
+- <code>ResponseCreatedEvent</code>
+- <code>ResponseError</code>
+- <code>ResponseErrorEvent</code>
+- <code>ResponseFailedEvent</code>
+- <code>ResponseFileSearchCallCompletedEvent</code>
+- <code>ResponseFileSearchCallInProgressEvent</code>
+- <code>ResponseFileSearchCallSearchingEvent</code>
+- <code>ResponseFileSearchToolCall</code>
+- <code>ResponseFormatTextConfig</code>
+- <code>ResponseFormatTextJSONSchemaConfig</code>
+- <code>ResponseFunctionCallArgumentsDeltaEvent</code>
+- <code>ResponseFunctionCallArgumentsDoneEvent</code>
+- <code>ResponseFunctionToolCall</code>
+- <code>ResponseFunctionToolCallItem</code>
+- <code>ResponseFunctionToolCallOutputItem</code>
+- <code>ResponseFunctionWebSearch</code>
+- <code>ResponseInProgressEvent</code>
+- <code>ResponseIncludable</code>
+- <code>ResponseIncompleteEvent</code>
+- <code>ResponseInput</code>
+- <code>ResponseInputAudio</code>
+- <code>ResponseInputContent</code>
+- <code>ResponseInputFile</code>
+- <code>ResponseInputImage</code>
+- <code>ResponseInputItem</code>
+- <code>ResponseInputMessageContentList</code>
+- <code>ResponseInputMessageItem</code>
+- <code>ResponseInputText</code>
+- <code>ResponseItem</code>
+- <code>ResponseOutputAudio</code>
+- <code>ResponseOutputItem</code>
+- <code>ResponseOutputItemAddedEvent</code>
+- <code>ResponseOutputItemDoneEvent</code>
+- <code>ResponseOutputMessage</code>
+- <code>ResponseOutputRefusal</code>
+- <code>ResponseOutputText</code>
+- <code>ResponseReasoningItem</code>
+- <code>ResponseRefusalDeltaEvent</code>
+- <code>ResponseRefusalDoneEvent</code>
+- <code>ResponseStatus</code>
+- <code>ResponseStreamEvent</code>
+- <code>ResponseTextAnnotationDeltaEvent</code>
+- <code>ResponseTextConfig</code>
+- <code>ResponseTextDeltaEvent</code>
+- <code>ResponseTextDoneEvent</code>
+- <code>ResponseUsage</code>
+- <code>ResponseWebSearchCallCompletedEvent</code>
+- <code>ResponseWebSearchCallInProgressEvent</code>
+- <code>ResponseWebSearchCallSearchingEvent</code>
+- <code>Tool</code>
+- <code>ToolChoiceFunction</code>
+- <code>ToolChoiceOptions</code>
+- <code>ToolChoiceTypes</code>
+- <code>WebSearchTool</code>
+
+Methods:
+
+- <code title="post /responses">client.responses.create({ ...params }) -> Response</code>
+- <code title="get /responses/{response_id}">client.responses.retrieve(responseId, { ...params }) -> Response</code>
+- <code title="delete /responses/{response_id}">client.responses.del(responseId) -> void</code>
+
+## InputItems
+
+Types:
+
+- <code>>ResponseItemList</code>
+
+Methods:
+
+- <code title="get /responses/{response_id}/input_items">client.responses.inputItems.list(responseId, { ...params }) -> ResponseItemsPage</code>
